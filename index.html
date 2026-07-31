@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MY SPECIAL PERSON ❤️</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= LOADER ================= -->
+
+    <div class="loader">
+      <div class="loader-content">
+        <div class="loader-heart">❤</div>
+
+        <h2>Preparing Your Surprise</h2>
+
+        <div class="loader-line">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= PIN ================= -->
+
+    <section id="pinPage" class="pin-page active">
+      <div class="pin-bg">
+        <span class="circle c1"></span>
+        <span class="circle c2"></span>
+        <span class="circle c3"></span>
+      </div>
+
+      <div class="pin-card">
+        <div class="pin-lock">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <h1>Private Access</h1>
+
+        <p>Enter your secret PIN</p>
+
+        <div id="pinDots" class="pin-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <small id="pinError"> Wrong PIN </small>
+
+        <div id="pinPad" class="pin-pad"></div>
+      </div>
+    </section>
+
+    <!-- ================= WEBSITE ================= -->
+
+    <main id="app">
+      <!-- Floating Background -->
+
+      <div class="floating-bg">
+        <span class="orb orb1"></span>
+        <span class="orb orb2"></span>
+        <span class="orb orb3"></span>
+      </div>
+
+      <div class="aurora">
+        <span class="blob blob1"></span>
+        <span class="blob blob2"></span>
+        <span class="blob blob3"></span>
+        <span class="blob blob4"></span>
+      </div>
+
+      <div class="noise-overlay"></div>
+
+      <!-- NAVBAR -->
+
+      <header>
+        <nav class="navbar">
+          <a href="#hero" class="logo">
+            ❤
+
+            <span> Birthday </span>
+          </a>
+
+          <ul>
+            <li>
+              <a href="#hero"> Home </a>
+            </li>
+
+            <li>
+              <a href="#music"> Music </a>
+            </li>
+
+            <li>
+              <a href="#letter"> Letter </a>
+            </li>
+
+            <!-- <li>
+              <a href="#timeline"> Story </a>
+            </li> -->
+
+            <li>
+              <a href="#gallery"> Gallery </a>
+            </li>
+          </ul>
+
+          <button id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+
+      <section id="hero" class="hero">
+        <div class="hero-left">
+          <span class="badge"> MY SPECIAL PERSON ❤️ </span>
+
+          <h1>
+            For
+
+            <span> My Darling❤️🫶🏻 </span>
+          </h1>
+
+          <!-- <p>Isi Sendiri.</p> -->
+
+          <div class="hero-button">
+            <a href="#music" class="primary"> Start Journey </a>
+
+            <a href="#letter" class="secondary"> Read Letter </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="photo-frame">
+            <img src="assets/images/pict1.jpeg" alt="Hero" />
+          </div>
+        </div>
+      </section>
+      <!-- ===================================================
+                        MUSIC PLAYER
+        ==================================================== -->
+
+      <section id="music" class="music">
+        <div class="section-title">
+          <span>Favorite Song</span>
+
+          <h2>Our Playlist</h2>
+
+          <p>Setiap kali kamu memutar 'Shape of My Heart', aku sadar… kamu bukan hanya mendengar lagu, tapi kamu merasakan setiap baitnya. Dan aku ingin menjadi bait terakhir yang selalu kamu ingat.</p>
+        </div>
+
+        <div class="music-player">
+          <div class="music-cover">
+            <img id="cover" src="assets/images/cover.jpg" alt="Album Cover" />
+
+            <div class="music-disc"></div>
+          </div>
+
+          <div class="music-content">
+            <h3 id="songTitle">Until I Found You</h3>
+
+            <p id="songArtist">Stephen Sanchez</p>
+
+            <div class="music-progress">
+              <span id="currentTime"> 00:00 </span>
+
+              <div id="progressBar" class="progress">
+                <div id="progressFill" class="progress-fill"></div>
+              </div>
+
+              <span id="duration"> 00:00 </span>
+            </div>
+
+            <div class="music-controls">
+              <button id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+              </button>
+
+              <button id="play" class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </button>
+
+              <button id="next">
+                <i class="fa-solid fa-forward-step"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+                        LOVE LETTER
+        ==================================================== -->
+
+      <section id="letter" class="letter">
+        <div class="section-title">
+          <span> Love Letter </span>
+
+          <h2>Just For You</h2>
+        </div>
+
+        <div class="envelope-wrapper">
+          <div id="envelope" class="envelope">
+            <div class="envelope-front"></div>
+
+            <div class="envelope-back"></div>
+
+            <div class="letter-paper">
+              <h3>
+                Dear,
+
+                <span> My Love ❤️ </span>
+              </h3>
+
+              <div id="typingText" class="letter-content"></div>
+
+              <div class="signature">
+                For My Love
+
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <button id="openEnvelope" class="primary">Open Letter</button>
+        </div>
+      </section>
+
+      <!-- ===================================================
+                        TIMELINE
+        ==================================================== -->
+
+      <!-- <section id="timeline" class="timeline">
+        <div class="section-title">
+          <span> Our Journey </span>
+
+          <h2>Every Moment Matters</h2>
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+              <span> 2022 </span>
+
+              <h3>First Meet</h3>
+
+              <p>Isi Sendiri.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+              <span> 2023 </span>
+
+              <h3>First Date</h3>
+
+              <p>Isi Sendiri.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+              <span> 2024 </span>
+
+              <h3>Favorite Memories</h3>
+
+              <p>Isi Sendiri.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+              <span> Future </span>
+
+              <h3>Forever</h3>
+
+              <p>Isi Sendiri.</p>
+            </div>
+          </article>
+        </div>
+      </section> -->
+      <!-- ===================================================
+                        POLAROID GALLERY
+        ==================================================== -->
+
+      <section id="gallery" class="gallery">
+        <div class="section-title">
+          <span>Memories</span>
+
+          <h2>Little Gallery</h2>
+
+          <!-- <p>Every photo tells a story.</p> -->
+        </div>
+
+        <div class="polaroid-wrapper">
+          <figure class="polaroid rotate-left">
+            <img src="assets/images/foto1.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Beautiful Smile</figcaption> -->
+          </figure>
+
+          <figure class="polaroid rotate-right">
+            <img src="assets/images/foto2.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Coffee Date</figcaption> -->
+          </figure>
+
+          <figure class="polaroid rotate-left">
+            <img src="assets/images/foto3.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Sunset Together</figcaption> -->
+          </figure>
+
+          <figure class="polaroid rotate-right">
+            <img src="assets/images/foto4.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Vacation</figcaption> -->
+          </figure>
+
+          <figure class="polaroid rotate-left">
+            <img src="assets/images/foto5.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Favorite Person</figcaption> -->
+          </figure>
+
+          <figure class="polaroid rotate-right">
+            <img src="assets/images/foto6.jpeg" alt="Memory" />
+
+            <!-- <figcaption>Forever</figcaption> -->
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===================================================
+                        REASONS
+        ==================================================== -->
+
+      <section id="reasons" class="reasons">
+        <div class="section-title">
+          <span>Reasons</span>
+
+          <h2>Why I Love You</h2>
+        </div>
+
+        <div class="reason-grid">
+          <article class="reason-card">
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Your Smile</h3>
+
+            <p>
+              Sayang, aku hanya ingin kamu tahu—senyummu adalah hal paling berharga yang pernah aku lihat. Bukan karena aku lebay, tapi karena setiap kali kamu tersenyum, aku merasa semua yang berat jadi ringan. Aku tidak butuh alasan besar
+              untuk bahagia. Cukup lihat senyummu, dan aku sudah merasa cukup. Terima kasih sudah selalu tersenyum, meski kadang hari tidak baik-baik saja. Senyummu adalah kekuatanku.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Your Eyes</h3>
+
+            <p>Aku tidak pernah percaya pada takdir, sampai aku menatap matamu dan merasa bahwa alam semesta sedang merencanakan sesuatu yang indah—yaitu mempertemukanku denganmu.</p>
+          </article>
+
+          <article class="reason-card">
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Your Voice</h3>
+
+            <p>Aku bisa mendengar ribuan suara dalam sehari. Tapi suaramu adalah satu-satunya yang selalu membuatku berhenti dan benar-benar mendengarkan.</p>
+          </article>
+
+          <article class="reason-card">
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Everything About You</h3>
+
+            <p>Bukan hanya senyummu, bukan hanya matamu, bukan hanya suaramu. Tapi semuanya—cara kamu berjalan, cara kamu tertawa, cara kamu diam, cara kamu mengatakan namaku—semuanya adalah alasan aku jatuh cinta setiap hari.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================================================
+                        COUNTDOWN
+        ==================================================== -->
+
+      <!-- <section id="countdown" class="countdown">
+        <div class="section-title">
+          <span>Countdown</span>
+
+          <h2>Until Your Birthday</h2>
+        </div>
+
+        <div class="count-grid">
+          <div class="count-box">
+            <h3 id="days">00</h3>
+
+            <span> Days </span>
+          </div>
+
+          <div class="count-box">
+            <h3 id="hours">00</h3>
+
+            <span> Hours </span>
+          </div>
+
+          <div class="count-box">
+            <h3 id="minutes">00</h3>
+
+            <span> Minutes </span>
+          </div>
+
+          <div class="count-box">
+            <h3 id="seconds">00</h3>
+
+            <span> Seconds </span>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ===================================================
+                        ENDING
+        ==================================================== -->
+
+      <section id="ending" class="ending">
+        <div class="ending-card">
+          <span> ❤ </span>
+
+          <h2>
+            Thank You
+
+            <br />
+
+            For Existing
+          </h2>
+
+          <!-- <p>Replace this final paragraph with your own heartfelt words.</p> -->
+
+          <a href="#hero" class="primary"> Replay Journey </a>
+        </div>
+      </section>
+
+      <!-- ===================================================
+                        FOOTER
+        ==================================================== -->
+
+      <footer>
+        <p>Made with ❤️</p>
+      </footer>
+    </main>
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div id="lightbox" class="lightbox">
+      <button id="closeLightbox" class="close-lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <button id="prevImage" class="lightbox-arrow left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <img id="lightboxImage" src="#" alt="Preview" />
+
+      <button id="nextImage" class="lightbox-arrow right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- ================= AUDIO ================= -->
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
